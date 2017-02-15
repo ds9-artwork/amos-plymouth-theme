@@ -25,8 +25,11 @@
 
 
 logo.image = Image("logo.png");
-Window.SetBackgroundTopColor (0.3, 0.3, 0.3);     /*Colors (RGB) are represented as percentages e.g. 1st value -> 100%=1.0 -> RED@255, 2nd value -> 80%=0.8 -> GREEN@204 and so on...*/
-Window.SetBackgroundBottomColor (0.3, 0.3, 0.3);    /*Set both to different colors to create a gradient or use the same values for a uniform color*/
+/*Colors (RGB) are represented as percentages e.g. 1st value -> 100%=1.0 -> RED@255, 2nd value -> 80%=0.8 -> GREEN@204 and so on...*/
+/*Set both to different colors to create a gradient or use the same values for a uniform color*/
+Window.SetBackgroundTopColor (0.2, 0.2, 0.2);
+Window.SetBackgroundBottomColor (0.2, 0.2, 0.2);
+/*END*/
 logo.sprite = Sprite(logo.image);
 logo.sprite.SetX (Window.GetWidth()  / 2 - logo.image.GetWidth()  / 2);
 logo.sprite.SetY (Window.GetHeight() / 2 - logo.image.GetHeight() / 2);
